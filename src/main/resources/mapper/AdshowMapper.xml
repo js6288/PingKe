@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljs.pingke.mapper.AdshowMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljs.pingke.pojo.Adshow">
+            <id property="adId" column="ad_id" jdbcType="INTEGER"/>
+            <result property="adName" column="ad_name" jdbcType="VARCHAR"/>
+            <result property="adSrc" column="ad_src" jdbcType="VARCHAR"/>
+            <result property="adIntroduce" column="ad_introduce" jdbcType="VARCHAR"/>
+            <result property="adAdminid" column="ad_adminId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ad_id,ad_name,ad_src,
+        ad_introduce,ad_adminId
+    </sql>
+</mapper>

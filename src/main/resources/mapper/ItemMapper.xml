@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljs.pingke.mapper.ItemMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljs.pingke.pojo.Item">
+            <id property="itemId" column="item_id" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="finishedTime" column="finished_time" jdbcType="TIMESTAMP"/>
+            <result property="itemType" column="item_type" jdbcType="VARCHAR"/>
+            <result property="requirement" column="requirement" jdbcType="VARCHAR"/>
+            <result property="refuseMessage" column="refuse_message" jdbcType="VARCHAR"/>
+            <result property="contactName" column="contact_name" jdbcType="VARCHAR"/>
+            <result property="contactNumber" column="contact_number" jdbcType="VARCHAR"/>
+            <result property="adminId" column="admin_id" jdbcType="INTEGER"/>
+            <result property="itemStatus" column="item_status" jdbcType="VARCHAR"/>
+            <result property="uploadAddress" column="upload_address" jdbcType="VARCHAR"/>
+            <result property="downloadAddress" column="download_address" jdbcType="VARCHAR"/>
+            <result property="itemName" column="item_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        item_id,user_id,create_time,
+        end_time,finished_time,item_type,
+        requirement,refuse_message,contact_name,
+        contact_number,admin_id,item_status,
+        upload_address,download_address,item_name
+    </sql>
+</mapper>
