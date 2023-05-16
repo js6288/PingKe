@@ -34,6 +34,10 @@ public class LoginController {
 //        return loginService.logout();
 //    }
 
+    /**
+     * 获取当前登录的用户信息
+     * @return
+     */
     @GetMapping("/user/getUserInfo")
     public AjaxResult getUserInfo(){
         User user = SecurityUtils.getLoginUser().getUser();
