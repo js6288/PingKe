@@ -6,16 +6,29 @@ PingKe是本人大学生创新创业训练作品，在大学生创新创业训�
 光盘等的平台。
 
 ## 主要模块与功能
-- 包括前台主页、我的项目、发起项目、客服咨询，后台管理系统等模块
-- 基于Spring Boot构建的单体项目
-- 使用Spring Security和JWT实现登录和权限控制
-- 使用WebSocket实现客服单聊功能
-- 使用Redis存储聊天记录
-- 使用quartz定时将redis中的数据定时写入MySQL
-- 使用docker部署，nginx反向代理后端接口
-- 文件管理：Aliyun OSS 签名直传 
+- 包括前台主页、我的项目、发起项目、客服咨询等模块
 
-## 技术栈
-- 前端：Vue、Element UI
-- 后端：Spring Boot、Mybatis-plus、Lombok 、MySQL、Redis、Spring Securit
-y、JWT 、quartz、Websocket、Docker
+## 前端
+- Vue 3
+- Vant UI 组件库
+- Vite 脚手架
+- Axios 请求库
+
+## 后端
+- Java SpringBoot 2.7.x 框架
+- MySQL 数据库
+- MyBatis-Plus
+- MyBatis X 自动生成
+- Redis 缓存（Spring Data Redis 等多种实现方式）
+- Redisson 分布式锁
+- Easy Excel 数据导入
+- Spring Scheduler 定时任务
+- Swagger + Knife4j 接口文档
+- Gson：JSON 序列化库
+- 相似度匹配算法
+
+
+## 部署
+- Serverless 服务
+- 云原生容器平台
+
